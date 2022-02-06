@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    buildFeatures{
+    buildFeatures {
         viewBinding true
     }
     compileSdk 32
@@ -17,6 +17,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -36,6 +38,7 @@ android {
 
 dependencies {
 
+    implementation "androidx.preference:preference-ktx:1.1.1"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
